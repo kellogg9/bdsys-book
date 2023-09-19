@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="./headers/getting-started.html" class="active">Getting Started</a>
+        <a href="./headers/introduction.html">Introduction</a>
+        <a href="./headers/basics.html">Basics</a>
+        <a href="./headers/adv-topics.html">Advanced Topics</a>
+        <a href="./headers/reference.html">Reference</a>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <h1>Getting Started</h1>
+        <p>Welcome to the guide...</p>
+    </div>
+
+    <!-- Arrows for navigation -->
+    <div class="arrow left" onclick="prevPage()">&lt;</div>
+    <div class="arrow right" onclick="nextPage()">&gt;</div>
+
+    <script>
+        function prevPage() {
+            // Navigate to the previous page
+            console.log("Navigate to the previous page");
+        }
+
+        function nextPage() {
+            // Navigate to the next page
+            console.log("Navigate to the next page");
+        }
+    </script>
+</body>
+</html>
