@@ -17,9 +17,10 @@
     </div>
 
     <!-- Content -->
-    <div class="container">
+    <div class="container" id="contentArea">
         <h1>Getting Started</h1>
         <p>Welcome to the guide...</p>
+        <button onclick="toggleNavbar()">Toggle Navbar</button>
     </div>
 
     <!-- Arrows for navigation -->
@@ -30,11 +31,26 @@
         function prevPage() {
             // Navigate to the previous page
             console.log("Navigate to the previous page");
+            // In a real-world scenario, replace the above with logic to navigate.
         }
 
         function nextPage() {
             // Navigate to the next page
             console.log("Navigate to the next page");
+            // In a real-world scenario, replace the above with logic to navigate.
+        }
+
+        function toggleNavbar() {
+            var navbar = document.getElementById('navbar');
+            var contentArea = document.getElementById('contentArea');
+            
+            if (navbar.style.display === 'none') {
+                navbar.style.display = 'block';
+                contentArea.classList.remove('full-width');
+            } else {
+                navbar.style.display = 'none';
+                contentArea.classList.add('full-width');
+            }
         }
     </script>
 </body>
