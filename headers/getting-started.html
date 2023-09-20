@@ -16,12 +16,12 @@
 
     <!-- Navbar -->
     <div class="navbar" id="navbar">
-        <a href="../index.html">Home</a>
-        <a href="./headers/getting-started.html" class="active">Getting Started</a>
-        <a href="./headers/introduction.html">Introduction</a>
-        <a href="./headers/basics.html">Basics</a>
-        <a href="./headers/adv-topics.html">Advanced Topics</a>
-        <a href="./headers/reference.html">Reference</a>
+        <a href="/bdsys-book/index.html">Home</a>
+        <a href="/bdsys-book/headers/getting-started.html" class="active">Getting Started</a>
+        <a href="/bdsys-book/headers/introduction.html">Introduction</a>
+        <a href="/bdsys-book//headers/basics.html">Basics</a>
+        <a href="/bdsys-book/headers/adv-topics.html">Advanced Topics</a>
+        <a href="/bdsys-book/headers/reference.html">Reference</a>
     </div>
 
     <!-- Content -->
@@ -71,13 +71,18 @@
     <!-- Javascript for navigation -->
     <script>
         var pages = [
+            "index.html",
             "headers/getting-started.html", 
             "headers/introduction.html", 
             "headers/basics.html", 
             "headers/advanced.html", 
             "headers/reference.html"
         ];
-        currentIndex = pages.indexOf("headers/" + window.location.pathname.split('/').pop());
+
+        // var currentPage = window.location.href.replace(window.location.origin + "/bdsys-book/headers", "");
+        var currentPage = window.location.pathname.replace("/bdsys-book/", "") || "index.html";
+
+        currentIndex = pages.indexOf(currentPage);
 
         function prevPage() {
             if (currentIndex > 0) {
@@ -94,16 +99,19 @@
         }
 
         function navigateToPage() {
+            var base_url = window.location.origin + "/bdsys-book/";
             var page = pages[currentIndex];
-            window.location.href = page;
+            window.location.href = base_url + page;
         }
+
 
         function toggleNavbar() {
             var navbar = document.getElementById('navbar');
             var contentArea = document.getElementById('contentArea');
             var header = document.getElementById('header');
+            var leftArrow = document.querySelector('.arrow.left');
             
-            if (!navbar || !contentArea || !header) {
+            if (!navbar || !contentArea || !header || !leftArrow) {
                 console.error("One or more elements not found!");
                 return;
             }
@@ -113,7 +121,7 @@
                 contentArea.style.marginLeft = "230px";
                 header.style.left = "230px";
                 header.style.width = "calc(100% - 230px)";
-                
+                leftArrow.style.left = "240px";
             } 
 
             else {
@@ -121,8 +129,9 @@
                 contentArea.style.marginLeft = "0";
                 header.style.left = "0";
                 header.style.width = "100%";
+                leftArrow.style.left = "20px";
             }
         }
-    </script>
+</script>
 </body>
 </html>
