@@ -16,7 +16,8 @@
 
     <!-- Navbar -->
     <div class="navbar" id="navbar">
-        <a href="./headers/getting-started.html" class="active">Getting Started</a>
+        <a href="./index.html" class="active">Introduction</a>
+        <a href="./headers/getting-started.html">Getting Started</a>
         <a href="./headers/introduction.html">Introduction</a>
         <a href="./headers/basics.html">Basics</a>
         <a href="./headers/adv-topics.html">Advanced Topics</a>
@@ -26,12 +27,12 @@
     <!-- Content -->
     <div class="container" id="contentArea">
         <h1>Getting Started</h1>
-        <p>Welcome to the guide...</p>
+        <p>Welcome to the guide on Big Data Systems.</p>
     </div>
 
     <!-- Arrows for navigation -->
-    <div class="arrow left" onclick="prevPage()">&lt;</div>
-    <div class="arrow right" onclick="nextPage()">&gt;</div>
+    <div class="arrow left" onclick="prevPage()" id="leftArrow">&lt;</div>
+    <div class="arrow right" onclick="nextPage()" id="rightArrow">&gt;</div>
 
     <!-- Javascript for navigation -->
     <script>
@@ -78,6 +79,7 @@
                 contentArea.style.marginLeft = "230px";
                 header.style.left = "230px";
                 header.style.width = "calc(100% - 230px)";
+                
             } 
 
             else {
