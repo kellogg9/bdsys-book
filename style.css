@@ -11,8 +11,36 @@ body {
     color: #333;
 }
 
+/* Improved spacing for main content */
+.main-content {
+    padding: 20px 40px;  /* Add padding for inner spacing */
+}
+
+.main-content h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.main-content ul {
+    margin-left: 30px;  /* Indentation for the list */
+}
+
+.main-content li {
+    margin-bottom: 10px;  /* Spacing between list items */
+}
+
+
 .container {
-    margin-left: 230px;  /* Width of the navbar */
+    margin-left: 270px;  /* Width of the navbar */
     margin-top: 70px;
     padding: 40px;
     transition: margin-left 0.3s;  /* Smooth transition */
