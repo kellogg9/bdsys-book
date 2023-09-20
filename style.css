@@ -12,10 +12,56 @@ body {
 }
 
 .container {
+    margin-left: 230px;  /* Width of the navbar */
     padding: 40px;
     transition: margin-left 0.3s;  /* Smooth transition */
     background-color: #ffffff;  /* Main content area background color */
 }
+
+
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 230px; /* starting after the navbar */
+    width: calc(100% - 230px); /* Taking the full width minus the navbar width */
+    height: 60px;
+    background-color: #222; /* Dark color */
+    color: #ddd; /* Light gray text color */
+    line-height: 60px;
+    padding: 0 20px; /* Some spacing for the text and button */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    display: flex; /* To align items */
+    justify-content: space-between; /* Space between title and button */
+    transition: all 0.3s; /* Smooth transition */
+}
+
+.full-width-header {
+    left: 0;
+    width: 100%;
+}
+
+
+
+/* Button Styles */
+.toggle-btn {
+    background-color: #444; /* Slightly different shade for contrast */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Slight rounding of corners */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
+
 
 /* Navbar */
 .navbar {
@@ -42,6 +88,8 @@ body {
     background-color: #333;  /* Slightly lighter color for hover/active state */
     color: #fff;  /* White text for hover/active state */
 }
+
+
 
 /* Arrows for navigation */
 .arrow {
