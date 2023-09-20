@@ -7,13 +7,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4;  /* Adjusted to a light gray for contrast */
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
-    margin-left: 240px; /* To account for the navbar width */
+    padding: 40px;
+    transition: margin-left 0.3s;  /* Smooth transition */
+    background-color: #ffffff;  /* Main content area background color */
 }
 
 /* Navbar */
@@ -23,21 +24,23 @@ body {
     left: 0;
     height: 100%;
     width: 230px;
-    background-color: #f8f8f8;
+    background-color: #222;  /* Dark color for navbar */
     overflow-y: auto;
-    padding-top: 20px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #333;
+    transition: all 0.3s;  /* Smooth transition */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
 }
 
 .navbar a {
     display: block;
-    color: #333;
+    color: #ddd;  /* Light gray text color */
     padding: 10px 15px;
     text-decoration: none;
 }
 
 .navbar a:hover, .navbar a.active {
-    background-color: #e0e0e0;
+    background-color: #333;  /* Slightly lighter color for hover/active state */
+    color: #fff;  /* White text for hover/active state */
 }
 
 /* Arrows for navigation */
@@ -45,23 +48,26 @@ body {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
     text-align: center;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 50px;
+    font-size: 24px;
     cursor: pointer;
-    border-radius: 50%; /* Round arrows */
 }
 
 .arrow:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .arrow.left {
-    left: 240px; /* Adjusted to be to the right of the navbar */
+    left: 240px;
+}
+
+.arrow.right {
+    right: 20px;
 }
 
 .full-width {

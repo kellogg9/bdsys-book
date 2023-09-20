@@ -28,16 +28,26 @@
     <div class="arrow right" onclick="nextPage()">&gt;</div>
 
     <script>
+        var pages = ["getting-started.html", "introduction.html", "basics.html", "advanced.html", "reference.html"];
+        var currentIndex = pages.indexOf(window.location.pathname.split('/').pop());
+
         function prevPage() {
-            // Navigate to the previous page
-            console.log("Navigate to the previous page");
-            // In a real-world scenario, replace the above with logic to navigate.
+            if (currentIndex > 0) {
+                currentIndex--;
+                navigateToPage();
+            }
         }
 
         function nextPage() {
-            // Navigate to the next page
-            console.log("Navigate to the next page");
-            // In a real-world scenario, replace the above with logic to navigate.
+            if (currentIndex < pages.length - 1) {
+                currentIndex++;
+                navigateToPage();
+            }
+        }
+
+        function navigateToPage() {
+            var page = pages[currentIndex];
+            window.location.href = page;
         }
 
         function toggleNavbar() {
@@ -46,12 +56,13 @@
             
             if (navbar.style.display === 'none') {
                 navbar.style.display = 'block';
-                contentArea.classList.remove('full-width');
+                contentArea.style.marginLeft = "240px";  // Adjust to the width of the navbar
             } else {
                 navbar.style.display = 'none';
-                contentArea.classList.add('full-width');
+                contentArea.style.marginLeft = "0";  // Make the content full width
             }
         }
+
     </script>
 </body>
 </html>
