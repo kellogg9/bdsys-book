@@ -47,10 +47,8 @@
 
             // var currentPage = window.location.href.replace(window.location.origin + "/bdsys-book/headers", "");
             var currentPage = window.location.pathname.replace("/bdsys-book/", "") || "index.html";
-            console.log("Current Page:", currentPage); // Debugging line
 
             currentIndex = pages.indexOf(currentPage);
-            console.log("Current Index:", currentIndex); // Debugging line
 
             function prevPage() {
                 if (currentIndex > 0) {
@@ -69,7 +67,6 @@
             function navigateToPage() {
                 var base_url = window.location.origin + "/bdsys-book/";
                 var page = pages[currentIndex];
-                console.log("Navigating to:", base_url + page); // Debugging line
                 window.location.href = base_url + page;
             }
 
