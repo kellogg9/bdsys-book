@@ -16,12 +16,12 @@
 
     <!-- Navbar -->
     <div class="navbar" id="navbar">
-        <a href="./index.html" class="active">Home</a>
-        <a href="./headers/getting-started.html">Getting Started</a>
-        <a href="./headers/introduction.html">Introduction</a>
-        <a href="./headers/basics.html">Basics</a>
-        <a href="./headers/adv-topics.html">Advanced Topics</a>
-        <a href="./headers/reference.html">Reference</a>
+        <a href="/bdsys-book/index.html" class="active">Home</a>
+        <a href="/bdsys-book/headers/getting-started.html">Getting Started</a>
+        <a href="/bdsys-book/headers/introduction.html">Introduction</a>
+        <a href="/bdsys-book//headers/basics.html">Basics</a>
+        <a href="/bdsys-book/headers/adv-topics.html">Advanced Topics</a>
+        <a href="/bdsys-book/headers/reference.html">Reference</a>
     </div>
 
     <!-- Content -->
@@ -37,6 +37,7 @@
     <!-- Javascript for navigation -->
     <script>
             var pages = [
+                "index.html",
                 "headers/getting-started.html", 
                 "headers/introduction.html", 
                 "headers/basics.html", 
@@ -45,8 +46,7 @@
             ];
 
             // var currentPage = window.location.href.replace(window.location.origin + "/bdsys-book/headers", "");
-            var currentPage = window.location.pathname.substring(1);  // Remove the leading slash
-
+            var currentPage = window.location.pathname.substring(1) || "index.html";  // Default to index.html
             console.log("Current Page:", currentPage); // Debugging line
 
             currentIndex = pages.indexOf(currentPage);
