@@ -67,14 +67,21 @@
             var contentArea = document.getElementById('contentArea');
             var header = document.getElementById('header');
             
+            if (!navbar || !contentArea || !header) {
+                console.error("One or more elements not found!");
+                return;
+            }
+            
             if (navbar.style.display === 'none') {
                 navbar.style.display = 'block';
-                contentArea.style.marginLeft = "230px";  // Adjust to the width of the navbar
+                contentArea.style.marginLeft = "230px";
                 header.style.left = "230px";
                 header.style.width = "calc(100% - 230px)";
-            } else {
+            } 
+            
+            else {
                 navbar.style.display = 'none';
-                contentArea.style.marginLeft = "0";  // Make the content full width
+                contentArea.style.marginLeft = "0";
                 header.style.left = "0";
                 header.style.width = "100%";
             }
