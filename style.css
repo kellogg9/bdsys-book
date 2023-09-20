@@ -13,6 +13,7 @@ body {
 
 .container {
     margin-left: 230px;  /* Width of the navbar */
+    margin-top: 70px;
     padding: 40px;
     transition: margin-left 0.3s;  /* Smooth transition */
     background-color: #ffffff;  /* Main content area background color */
