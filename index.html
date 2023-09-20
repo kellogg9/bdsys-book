@@ -37,14 +37,14 @@
     <!-- Javascript for navigation -->
     <script>
             var pages = [
-                "headers/getting-started.html", 
-                "headers/introduction.html", 
-                "headers/basics.html", 
-                "headers/advanced.html", 
-                "headers/reference.html"
+                "getting-started.html", 
+                "introduction.html", 
+                "basics.html", 
+                "advanced.html", 
+                "reference.html"
             ];
 
-            var currentPage = window.location.href.replace(window.location.origin + "/bdsys-book/", "");
+            var currentPage = window.location.href.replace(window.location.origin + "/bdsys-book/headers", "");
             console.log("Current Page:", currentPage); // Debugging line
 
             currentIndex = pages.indexOf(currentPage);
