@@ -16,12 +16,12 @@
 
     <!-- Navbar -->
     <div class="navbar" id="navbar">
-        <a href="/bdsys-book/index.html" class="active">Home</a>
+        <a href="/bdsys-book/index.html">Home</a>
         <a href="/bdsys-book/headers/getting-started.html">Getting Started</a>
         <a href="/bdsys-book/headers/introduction.html">Introduction</a>
         <a href="/bdsys-book//headers/basics.html">Basics</a>
         <a href="/bdsys-book/headers/adv-topics.html">Advanced Topics</a>
-        <a href="/bdsys-book/headers/reference.html">Reference</a>
+        <a href="/bdsys-book/headers/reference.html" class="active">Reference</a>
         <a href="/bdsys-book/headers/lectures.html">Lectures</a>
         <a href="/bdsys-book/headers/book.html">Book</a>
     </div>
@@ -45,11 +45,11 @@
                 "headers/getting-started.html", 
                 "headers/introduction.html", 
                 "headers/basics.html", 
-                "headers/advanced.html", 
+                "headers/adv-topics.html", 
                 "headers/reference.html",
                 "headers/lectures.html",
                 "headers/book.html"
-        ];
+            ];
 
         // var currentPage = window.location.href.replace(window.location.origin + "/bdsys-book/headers", "");
         var currentPage = window.location.pathname.replace("/bdsys-book/", "") || "index.html";
