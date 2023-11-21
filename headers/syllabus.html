@@ -26,8 +26,89 @@
     <!-- Content -->
     <div class="container" id="contentArea">
         <div class="main-content">
+            <div>
+                <h1>Syllabus / Class Information</h1>
+            </div>
+            <img src="/pics/sylheader.png">
+            <div>
+                <h3>What is this class about?</h3>
+                <p>
+                    Big data is everywhere. A fundamental goal across numerous modern businesses and sciences is to be able to utilize as many machines as possible, to consume as much information as possible and as fast as possible. The big challenge is "how to turn data into useful knowledge".
+                    This is a moving target as both the underlying hardware and our ability to collect data evolve. In this class, we will discuss how to design big data systems, data structures and algorithms for key data-driven areas, including distributed systems, Parallel systems, graph systems, 
+                    SQL/noSQL, machine learning and neural networks. We will see how they all rely on the same set of very basic concepts and we will learn how to synthesize efficient solutions for any problem across these areas using those basic concepts.
+                </p>
+            </div>
+            <div>
+                <h3>What is a big data system?</h3>
+                <p>
+                    Data systems are literally everywhere. We are using them directly or indirectly every day all day long for numerous basic or not so basic tasks, e.g., when we are buying coffee to when we are booking airplane tickets or training a neural network. 
+                    They provide the backbone of all modern businesses to manage their data and of course they provide the backbone of online businesses and environments such as social networks and search engines. 
+                    They are also used increasingly in science as data analytics becomes more and more the fundamental barrier in generating knowledge.
+                </p>
+            </div>
+            <div>
+                <h3>What is this class NOT about?</h3>
+                <p>
+                    This class is not a traditional introduction on how we use a database system and how to write SQL. Instead, this is a systems class about data system design. 
+                    You will learn how big data systems work at their core and how to design new systems for emerging data- driven applications and hardware By the way, if you know how systems work, you also become better at using them!
+                </p>
+            </div>
+            <div>
+                <h3>Why take this class?</h3>
+                <p>
+                    Data is everywhere. Every year we create even more data. As it stands, every two days we create as much data as much we created from the dawn of humanity up to 2003. Sciences, businesses, and everyday life are substantially affected. Data systems are in the middle of all this. Data systems are how we store and access data, i.e., they are the backbone of any data-driven application. It is a $100B industry, growing 10% every year [Economist, “Data, data everywhere”].
+
+                    At the same time big data systems research and the whole industry are going through a major and continuous transition; given that new data-driven scenarios and applications continuously pop up, there is a continuous need to redefine what is a good data system design in such a dynamic environment.
+
+                    DS5110 exposes students to the core internals of big data systems making it possible to understand core trends in system design and to be one of the few who know how to design and evaluate systems. In addition, due to the way the course is taught (focus on interactive problem solving, open topics and the latest research results) this is also a great class for those who want to understand what CS research is all about and how to engage in doing research.
+                </p>
+            </div>
+            <div>
+                <h3>Expected Learning Outcome</h3>
+                <p>
+                    <ul style="list-style-type:square">
+                        <li>Learn state-of-the-art research and industry trends in big data systems.</li>
+                        <li>Understand the tradeoffs in designing and implementing modern big data systems.</li>
+                        <li>Be able to make design decisions in big data driven scenarios.</li>
+                        <li>Understand the fundamental principles that govern all systems out how these apply across diverse areas: Distributed and Parallel Systems, SQL/NoSQL, Neural Networks, Graphs, and Data Science.</li>
+                        <li>Develop basic research skills: reading, writing and understanding research papers.</li>
+                        <li>Deepen programming, debugging, and performance profiling skills.</li>
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Class Philosophy</h3>
+                <p>
+                    DS5110 has unlimited office hours, unlimited late days for project deliverables, relies on the latest research papers instead of a standard text book, lectures are based on interaction and discussion instead of just “lecturing”, many of the quizzes and problem sets are actually open research problems and most of all it is fun! The instructor and the TFs are here to help you every day and at all times throughout the semester. You may request as many meetings as you like and as much help as you want.
+
+                    The course is also geared towards engaging creative thinking and problem solving to give students a feeling of how computer science research takes place. Many of our students in the past have successfully engaged in research projects with DASlab and published research papers.
+                </p>
+            </div>
+            <div>
+                <h3>How much work is it?</h3>
+                <p>
+                    You may have heard stories about CS165 and wondering if DS5110 is going to be equally hard or you may have taken CS165 and wondering if this is going to be a similar amount of work. CS165 and DS5110 are different style of classes. While CS165 is much more focused on implementation leading to a full system prototype, DS5110 is more focused on ideas and design. In other words, you may have written 5-10K lines of code (some even more!) for CS165 but in DS5110 you are more likely going to write small amounts of code and mostly play with alternative ways to design a specific functionality, structure or algorithm to highlight the effect of different choices and to find out new ways to solve a specific problem.
+                </p>
+            </div>
+            <div>
+                <h3>Lectures</h3>
+                <p>
+                    This class meets once per week.
+                    More info can be found on the lectures page.
+                </p>
+            </div>
+            <div>
+                <h3>Interaction in Every Class</h3>
+                <p>
+                    While the instructor will do a few lectures through the semester, the class is going to be primarily discussion based. Think of this as an extended brainstorming session, a round table discussion about a specific problem in each class. The goal is to create the maximum possible interaction.
+
+                    Our discussion will aim at bringing up design trends and tradeoffs, as well as algorithmic issues. Another significant part of our discussions will focus on examining open problems and to highlight opportunities for innovation.
+
+                    At the very beginning of the semester the instructor will do 5-6 lectures to provide the necessary background. After that, each class will be based on a student presentation about a recent research paper which will work as a trigger for the day’s brainstorming. Depending on the needs of the class, the instructor will do additional lectures during class time or during our extra research sessions.
+                </p>
+            </div>
             <!-- <img src="./images/code_image_main.jpeg" alt="Header Code Image"/> -->
-            <h2>Overview</h2>
+            <!-- <h2>Overview</h2>
             <p>Welcome to the graduate course on Big Data Systems. Scalable big data systems are a central part of modern data science. This course will cover topics including design and use of parallel dataflow systems (MapReduce/Hadoop and Spark), scalable and parallel Python analytics frameworks, cloud data systems (cloud storage, cloud-native data processing), and machine learning systems. A major component of this course is hands-on programming using scalable analytics tools and cloud resources on Amazon Web Services (AWS) and Google Cloud.</p>
     
             <h2>Info</h2>
@@ -59,7 +140,7 @@
                 <ul style="list-style-type:square">
                     <li>All students should be comfortable with programming in one of the following programming languages: Python, Java, Go, C/C++. This is a strong requirement as DS 5110 features hands-on programming.</li>
                 </ul>
-            </p>
+            </p> -->
         </div>
     </div>
 
